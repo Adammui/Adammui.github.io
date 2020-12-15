@@ -94,6 +94,7 @@ nav li {
 footer {
 	background-color: #2d2d2d ;
     position: relative;
+    height:auto;
   	height: 300px;
   	text-align: left;
 	color:white;
@@ -101,47 +102,31 @@ footer {
 }
 
 .col-f1 {
-  width: 15%;
+  width: 13%;
   float: left;
-}
-.col-f1 h3 {
-	text-align: center;
+  margin-left: 2%;
+  list-style: none;
 }
 .col-f2 {
   width: 15%;
   float: left;
 }
-.col-f2 li {
-  list-style: none;
-}
 
-}
-.col-f2 h3 {
-	text-align: center;
-}
 .col-f3 {
 	width: 30%;
 	float: left;
-}
-.col-f3 ul{
-	list-style: none;
-}
-.col-f3 h3 {
-	text-align: center;
 }
 .col-f4 {
   width: 40%;
   float: left;
 }
-.col-f4 h3 {
-	text-align: center;
-}
+
 .copyright {
 	width: 100%;
 	text-align: center;
 	position:static;
 	float:left;
-	padding-top: 30px;
+	padding-bottom: 30px;
 	font-size: 90%;
 
 }
@@ -847,24 +832,31 @@ footer {
 }
 .col-f1 {
   width: 25%;
-  float: center;
+}
+.col-f1 p {
+  text-align:center;
 }
 
 .col-f2 {
   width: 30%;
-  float: center;
 }
-
+.col-f2 p {
+  text-align:center;
+}
 .col-f3 {
   width: 40%;
-  float: center;
+}
+.col-f3 p {
+  text-align:center;
 }
 
 .col-f4 {
   width: 90%;
   margin:1%;
   margin-left: 5%;
-  float: center;
+}
+.col-f4 p {
+  text-align:center;
 }
 .phonepic {
 	width: 100% ;
