@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Memory book- Контакты</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="pics/kot13.png" type="image/png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -12,7 +13,9 @@
  		<div class="container">
  			<a class= "mainpage" href="index.html"> Memory book</a>
  			<a class= "logo"> MB </a>
- 			<nav > 
+ 			<a href="javascript:void(0);" class="icon" onclick="hideup()">
+    <i class="fa fa-bars"></i></a>
+ 			<nav id="MyLinks">  
  				<ul>
 	 				<li class="menu-button"> <a href="index.html" > Главная </a> </li>
 	 				<li class="menu-button"> <a href="albums.html" > Альбомы </a> </li>
@@ -49,18 +52,14 @@
 		
 		<h2 class="form-button"> Форма обратной связи</h2>
 			<div class="forma">
-				<form name="form" class="forma-text"  action="mail.php" method="post">
-						<p> <div class="form-title">Ваше имя</div> <input class="input" name="name" type="text" required/> </p>
+				<form name="form" class="forma-text"  action="https://formspree.io/f/xleopzew"
+  method="POST">
+						<p> <div class="form-title">Ваше имя*</div> <input class="input" name="name" type="text" placeholder="Имя"required/> </p>
 						 
-						<p> <div class="form-title">Электронная почта</div> <input type="email"class="input" name="email" type="text" required/> </p>
+						<p> <div class="form-title">Электронная почта*</div> <input type="email"class="input" name="email" type="text" placeholder="mail@mail.ru"required/> </p>
+						<p> <div class="form-title">Мобильный телефон(не обязательно)</div> <input type="number" class="input" name="phonenum" placeholder="00-000-000" type="text"/> </p>
 						 
-						<p> <div class="form-title">Выберите цель отправки письма</div>
-						<select class="select" name="option" required>
-    					<option value="" disabled selected> Тема вашего письма</option>
-    					<option value="1">Оставить отзыв</option>
-    					<option value="2">Задать вопрос</option>
-  						</select>
-						<p> <div class="form-title">Текст сообщения:</div><textarea name="message" class="select" cols="22" rows="5" /></textarea></p>
+						<p> <div class="form-title">Текст сообщения*</div><textarea name="message" class="select" cols="22" rows="5" placeholder="Ваше сообщение" required /></textarea></p>
 						<p><input class="submit" value="Отправить" type="submit" /></p>
 				</form>
 			</div>
@@ -104,4 +103,6 @@
   			</div>
 	</footer>
 </body>
+
+<script src="script.js"> </script>
 </html>
