@@ -1,0 +1,57 @@
+.gallery {
+	float:left;
+	text-align: center;
+	width: 70%;
+	position:relative;
+	padding: 1% 0 1% 0;
+	width:100%;
+	max-height:500px;
+	overflow: hidden;
+}
+
+.prev {
+  cursor: pointer;
+  left:0;
+  position: absolute;
+  top: 200px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.container .hide{
+	display:block;
+}
+@media (max-width: 855px){
+.mainpage-col2{
+	width: 100%;	
+}
+}
+@media (max-width: 915px){
+
+.container .hide{
+	display: none;
+}
+}
