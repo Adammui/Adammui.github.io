@@ -1,0 +1,117 @@
+
+    /* swiper styling */
+  .swiper-slide {
+      flex: 0 0 33.3333333%;
+      max-width: 33,3333333%;
+      height:300px;
+    }
+.swiper-wrapper{
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+  display: flex;
+      transition: transform 0.6s ease;
+}
+ .swiper-slide img{ 
+      height: 100%;
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+.swiper-pagination-bullet {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.swiper-pagination-bullet-active {
+ background-color: #717171;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin-left: 10px;
+}
+
+/* приближение картинки*/
+.lb-overlay{
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  z-index: 5;
+  text-align: center;
+  background: black;
+  opacity: 1;
+}
+.lb-overlay a.lb-close{
+  background: rgba(27,54,81,0.8);
+  z-index: 5;
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  width: 50px;
+  height: 23px;
+  overflow: hidden;
+  margin-left: -25px;
+  opacity: 0;
+}
+.lb-overlay img{
+  height: 100%;
+
+  width:auto;
+  position: relative;
+  opacity: 1;
+}
+.lb-prev, .lb-next{
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+}
+.lb-prev:hover, .lb-next:hover{
+  opacity: 1;
+}
+.lb-prev{
+  margin-left: -30px;
+  background: transparent url(../images/arrows.png) no-repeat top left;
+}
+.lb-next{
+  margin-left: 6px;
+  background: transparent url(../images/arrows.png) no-repeat top right;
+}
+.lb-overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+  padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img,
+.lb-overlay:target a.lb-close{
+  opacity: 1;
+}
+x:-o-prefocus, .lb-overlay img {
+    height: 100%;
+}
+
+

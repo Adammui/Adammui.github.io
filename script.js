@@ -126,6 +126,23 @@ if(animItems.length>0){
     animOnScroll();
 }
 
+/* 
+function isEmail(z)
+{
+let field=document.getElementsByClassName("selll");
+let index= document.form.selll.selectedIndex;
+if (z==='1')
+{
+    form.selll.selectedIndex=1;
+}
+else(z==='2')
+{form.selll.selectedIndex=2;}
+else(z==='3')
+{form.selll.options[3].selected=true;}
+else(z==='4')
+{form.selll.options[4].selected=true;}
+
+}
 /*EASY SLIDE SHOW */
  /*   var slideIndex = 1;
     showSlides(slideIndex);
