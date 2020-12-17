@@ -86,6 +86,54 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+/* приближение картинки*/
+.lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 5;
+	text-align: center;
+	background: black;
+	opacity: 1;
+}
+.lb-overlay a.lb-close{
+	background: rgba(27,54,81,0.8);
+	z-index: 5;
+	color: #fff;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	font-size: 15px;
+	line-height: 26px;
+	text-align: center;
+	width: 50px;
+	height: 23px;
+	overflow: hidden;
+	margin-left: -25px;
+	opacity: 0;
+}
+.lb-overlay img{
+	height: 100%;
+	width:100%;
+	width:auto;
+	position: relative;
+	opacity: 1;
+}
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+}
+.lb-overlay:target img,
+.lb-overlay:target a.lb-close{
+	opacity: 1;
+}
 
 @media (max-width: 855px){
 .gallery-col-1{
