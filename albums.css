@@ -1,3 +1,4 @@
+/* чуть чуть измененные стили для блока со слайдером*/
 .gallery {
 	float:left;
 	text-align: center;
@@ -43,7 +44,32 @@
 }
 .container .hide{
 	display:block;
+} 
+/* подчеркивание при наведении*/
+.blur p{
+
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 1s;
 }
+
+.blur p:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border-bottom: 3px solid white;
+  bottom: .15em;
+  transition: all 1s;
+}
+.blur p:hover:after {
+    width: 0%;
+    border-bottom-width: 1px;
+}
+
+
+
 @media (max-width: 855px){
 .mainpage-col2{
 	width: 100%;	

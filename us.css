@@ -64,7 +64,51 @@
 .lb-overlay:target a.lb-close{
 	opacity: 1;
 }
-x:-o-prefocus, .lb-overlay img {
-    height: 100%;
+
+/* подчеркивание при наведении*/
+.blur p{
+
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 1s;
 }
+
+.blur p:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border-bottom: 2px solid white;
+  bottom: 5%;
+  transition: all 1s;
+}
+.blur p:hover:after {
+    width: 0%;
+    border-bottom-width: 2px;
+}
+.blur h2{
+
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.blur h2:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 40%;
+  margin: auto;
+  border-bottom: 2px solid white;
+  bottom: 5%;
+  transition: all 1s;
+}
+.blur h2:hover:after {
+    width: 0%;
+    border-bottom-width: 2px;
+}
+
+
+
 
