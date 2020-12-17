@@ -152,7 +152,7 @@ a:hover {
 .colorlink {
 	text-decoration: underline;
 }
-/* Главная*/
+/* основные блоки страниц*/
 .mainpage-header {
 	float: right;
 	font-weight: bold;
@@ -859,6 +859,27 @@ footer {
 }
 .main-pic-text-little-more{
 	display:none;
+}
+figure.effect-zoe h2 {
+	display:none;
+}
+.grid figure figcaption {
+	
+	font-size: 100%;
+	padding-bottom: 100%;
+}
+figure.effect-zoe p.description {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	padding-right: 20%;
+	color: #fff;
+	text-transform: none;
+	font-size: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-backface-visibility: hidden;
 }
 iframe{
 	width:100%;
