@@ -1,3 +1,3 @@
 # adammui.github.io
 
-kursach ^(
+kursach 1   ^(
